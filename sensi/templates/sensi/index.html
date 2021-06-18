@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Sensitivity converter</h1>
+        <form action="{% url 'index' %}" method="post">
+        {%  csrf_token  %}
+        {{ form }}
+        <input type="submit">
+        <br><br>
+         CS GO Sensitivity :
+        {{ s2 }}
+
+        </form>
+    </body>
+</html>
